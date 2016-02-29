@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Nedanstående ikoner genererade från http://www.favicomatic.com/ -->
+    <!-- Standard ikon  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Apple icons till iPhone, iPad, etc -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+
+    <!-- Varianter på standard-ikon -->
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+
+    <!-- Microsoft stuff för att kunna pinna (fästa) en app ikon på startsidan/startmenyn -->
+    <meta name="application-name" content="Närmaste Serviceställe" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!-- Apple Startup image storlek 320x480 pixels (porträtt) skapad i Photoshop -->
+    <link rel="apple-touch-startup-image" href="startup.png">
+
+    <!-- Tala om för en iPhone/iPad att appen kan köras i helskärmsläge -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Tala om för en iPhone/iPad/Android att skalning/zoom ska vara 1.0 (ingenskalning/zoom) -->
+    <!-- Eftersom appen är enkel vill vi också unvika att användaren zoomar - zoom i kartan undantagen 
+        -- lite redundant, men ibland behöver man vara övertydlig när många olika device sta stödjas! -->
+    <meta name = "viewport" content = "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+
+
+
+    <title>Närmaste Serviceställe</title>
+    <link href="servicestalle.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Närmaste Serviceställe</h1>
+    <!-- Rubriken "Karta" behövs inte - man ser typ att det är en karta! -->
+    <!--<h3>Karta</h3>-->
+    <div id="karta"></div>
+    <h3>Vägbeskrivning</h3>
+    <div id="beskrivning"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="servicestalle.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeTQyrXUcc6UrYFvmY0pz2MWSVMCz9X5E&callback=googleMapsLaddat"></script>
+</body>
+</html>
+

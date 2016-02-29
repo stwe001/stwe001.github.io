@@ -1,0 +1,40 @@
+﻿/* servicestalle.css – Stilmall för webbappen servicestalle.html */
+
+*
+{
+    /* Unvik att den "irriterande" kopiera-funktionen aktiveras om man råkar hålla fingret länge på en iPhone/iPad-skärm */
+    /*  '*' som inleder den här inställnigen avser alla element på sidan (allt innehåll)  */
+    -webkit-user-select: none;
+}
+
+
+body
+{
+    /* Byt font till Verdana i hela dokumentet */
+    font-family: Verdana;
+    /* Centrera alla "text-element" */
+    text-align: center;
+}
+
+#karta
+{
+    width: 400px;
+    height: 400px;
+
+    /* Visa kartan som ett text-element (så att den centreras) */
+    display: inline-block;
+}
+
+#beskrivning
+{
+    /* Visa beskrivningsblocket som ett text-element (så att den centreras) */
+    display: inline-block;
+}
+
+    #beskrivning table
+    {
+        /* Lägg till så att tabellen med detaljinstruktioner centreras i beskrivningsblocket (höger/vänster marginaler sätts till auto) */
+        margin: 0 auto !important;
+        /* Ta bort eventuell "float", dvs att tabellen packas åt vänster eller höger */
+        float: none;
+    }
